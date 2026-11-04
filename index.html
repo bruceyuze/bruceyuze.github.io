@@ -54,55 +54,97 @@
       border-width: 1px;
       border-color: Black;
   }
+  html, body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  table.page {
+    width: 100%;
+    max-width: 900px;
+  }
+  .paper pre {
+    overflow-x: auto;
+  }
+  .equal-note {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+  }
+  /* Phones: stack the layout tables into a single column */
+  @media (max-width: 640px) {
+    table, tbody, tr, td {
+      display: block;
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+    td {
+      padding: 6px 0 !important;
+    }
+    table.page > tbody > tr > td {
+      padding: 16px !important;
+    }
+    pageheading {
+      font-size: 30px;
+    }
+    .cn-name {
+      font-size: 28px !important;
+    }
+    .profile-photo {
+      display: block;
+      width: 60%;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+    .bio {
+      text-align: left;
+    }
+    .edu-date {
+      text-align: left;
+      padding-top: 0 !important;
+      color: #666;
+    }
+  }
   </style>
   <link rel="shortcut icon" href="images/star_icon.png">
   <script type="text/javascript" src="js/hidebib.js"></script>
-  <title>Yuze Zhai</title> 
-  <meta name="Yuze's Homepage" http-equiv="Content-Type" content="Yuze's Homepage">
+  <title>Yuze Zhai</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuze's Homepage">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- Start : Google Analytics Code -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview');
-    </script>
-  <!-- End : Google Analytics Code -->
   <!-- Scramble Script by Jeff Donahue -->
   <script src="js/scramble.js"></script>
 </head>
  
 <body>
-<table width="900" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
+<table class="page" border="0" align="center" cellspacing="0" cellpadding="20">
   <tr><td>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <p align="center">
     <pageheading>Yuze Zhai</pageheading>
-    <span style="font-family: 'STKaiti', 'KaiTi', 'FangSong', serif; font-size: 36px; margin-left: 10px;">翟宇泽</span><br>
+    <span class="cn-name" style="font-family: 'STKaiti', 'KaiTi', 'FangSong', serif; font-size: 36px; margin-left: 10px;">翟宇泽</span><br>
   </p>
 
   <tr>
     <td width="30%" valign="top">
-      <img src="images/realnew.jpg" width="80%" style="border-radius:15px">
+      <img src="images/realnew.jpg" class="profile-photo" width="80%" style="border-radius:15px">
     <p align=center style="font-size: 28px; line-height: 1.8;">
     <a href="mailto:bruceyuze@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=L4TEVycAAAAJ" title="Google Scholar"><i class="fab fa-google-scholar"></i></a>
     <a href="https://github.com/bruceyuze" title="GitHub"><i class="fab fa-github"></i></a>
     <a href="https://linkedin.com/in/yuze-zhai" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
     <a href="https://x.com/bruceyuze?s=21" title="X/Twitter"><i class="fab fa-x-twitter"></i></a>
-    <a href="https://xhslink.com/m/3MAfIfMj7AS" title="RedNote"><i class="fab fa-reddit" style="color: #8b5cf6;"></i></a>
-    <a href="javascript:void(0)" title="WeChat" onclick="alert('WeChat ID: Bruce-robo')"><i class="fab fa-weixin"></i></a>
+    <a href="javascript:void(0)" title="WeChat" onclick="alert('WeChat ID: Bruce-Yuze')"><i class="fab fa-weixin"></i></a>
     </p>
     </td>
-    <td width="70%" valign="top" align="justify">
+    <td width="70%" valign="top" align="justify" class="bio">
       <p>
-        Hi there! I am a 3rd year undergraduate student majoring in Robotics at <a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a>, with research interests in humanoid robotics and robot learning. Currently I am a visiting student at <a href="https://ucsd.edu/">UCSD</a>, working on humanoid robot.
+        Hi there! I am a 4th-year undergraduate student majoring in Robotics at <a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a>, with research interests in humanoid robotics and robot learning. During my junior year, I was a visiting student at <a href="https://ucsd.edu/">UCSD</a>, working on humanoid robots. <strong>I am applying for PhD positions starting Fall 2027.</strong>
       </p>
       <p>
-        I am particularly interested in whole-body loco-manipulation, reinforcement learning, and sim-to-real. My research goal is building general purpose robot.
+        I am particularly interested in whole-body loco-manipulation, reinforcement learning, and sim-to-real. My research goal is to build general-purpose robots.
       </p>
       <p>
         I am passionate about the intersection of Robotics, Computer Vision and Reinforcement Learning. Feel free to reach out via email if you are interested in my research or potential collaborations :)
@@ -117,12 +159,14 @@
   <tr><td><sectionheading>&nbsp;&nbsp;News</sectionheading></td></tr>
 </table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td>
       <ul>
-        <li>[10/2025] Started visiting student position at UCSD working on humanoid robotics.</li> 
+        <li>[11/2026] Our paper <a href="https://xuanbinpeng.com/hug/">HuG</a> has been accepted to <strong>CoRL 2026</strong>! See you in Austin!</li>
+        <li>[10/2025] Started visiting student position at UCSD working on humanoid robotics.</li>
       </ul>
     </td>
   </tr>
-  
 </table>
 <hr/>
 
@@ -134,8 +178,34 @@
   <!-- begin -->
 
   <tr>
-    <td width="100%" valign="top" align="center">
-      <p style="color: #666; font-style: italic;">Publications will be added here. Replace this section with your research papers and projects.</p>
+    <td width="40%" valign="top" align="center">
+      <video playsinline autoplay loop muted src="videos/hug.mp4" poster="images/hug_poster.jpg" width="90%"
+        style="aspect-ratio: 16/9; object-fit: cover; padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </td>
+
+    <td width="60%" valign="top">
+      <p>
+        <a href="https://xuanbinpeng.com/hug/">
+          <heading>HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception</heading>
+        </a><br>
+        Xuanbin Peng*, Lai Wei*, <strong>Yuze Zhai*</strong>, Qingyuan Yu*, Keyi Wang, Jianglong Ye, and Xiaolong Wang<br>
+        Conference on Robot Learning (CoRL), 2026<br>
+        <span class="equal-note">* Equal contribution</span>
+      </p>
+      <div class="paper" id="hug">
+        <a href="https://xuanbinpeng.com/hug/">webpage</a> |
+        <a href="https://xuanbinpeng.com/hug/demo/">live demo</a> |
+        <a shape="rect" href="javascript:togglebib('hug')" class="togglebib">bibtex</a>
+        <pre xml:space="preserve">
+@inproceedings{peng2026hug,
+  title={HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception},
+  author={Xuanbin Peng and Lai Wei and Yuze Zhai and Qingyuan Yu and Keyi Wang and
+          Jianglong Ye and Xiaolong Wang},
+  booktitle={Conference on Robot Learning (CoRL)},
+  year={2026}
+}
+        </pre>
+      </div>
     </td>
   </tr>
 
@@ -165,6 +235,41 @@
 
 <hr/>
 
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr><td><sectionheading>&nbsp;&nbsp;Education</sectionheading></td></tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td width="75%" valign="top">
+      <strong>Southern University of Science and Technology (SUSTech)</strong>, Shenzhen, China<br>
+      B.Eng. in Robotics
+    </td>
+    <td width="25%" valign="top" align="right" class="edu-date">2023 &ndash; 2027 (expected)</td>
+  </tr>
+  <tr>
+    <td width="75%" valign="top">
+      <strong>University of California, San Diego (UCSD)</strong>, La Jolla, CA, USA<br>
+      Visiting Student
+    </td>
+    <td width="25%" valign="top" align="right" class="edu-date">2025 &ndash; 2026</td>
+  </tr>
+</table>
+
+<hr/>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr><td><sectionheading>&nbsp;&nbsp;Misc</sectionheading></td></tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td>
+      Outside of research, I enjoy reading, movies, traveling, music, hiking, and cooking.
+    </td>
+  </tr>
+</table>
+
+<hr/>
+
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
     <tr><td><br><p align="right">
     Website template from <a href="https://zipengfu.github.io/">here</a>
@@ -175,39 +280,6 @@
 </table>
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('material_review_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('ieee_iot_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('acm_turc_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('aog_mcts_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('pragmatics_marl_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('collab_marl_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('rma_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('energyloco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('navloco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('maniploco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('parkour_abs');
 </script>
 </body>
 
